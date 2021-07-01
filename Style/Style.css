@@ -1,49 +1,52 @@
-@font-face {font-family: "MarzoW00-Regular";
-            src: url("Marzo W00 Regular.ttf")}
-
-header{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),url("../Images/FeatherBanner.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    height: 100vh;
+@font-face {
+  font-family: "MarzoW00-Regular";
+  src: url("Marzo W00 Regular.ttf")
 }
 
-#contactHeader{
+header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../Images/FeatherBanner.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#contactHeader {
   height: 90vh;
 }
 
-header nav{
-  height: 13%;
+header nav {
+  height: 13vh;
   background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: #fff 1px solid; 
+  border-bottom: #fff 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header nav ul{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items:center ;
-    padding: 2vh 0;
+header nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 0;
 }
 
-header nav ul li{
-    font-family: 'MarzoW00-Regular', sans-serif;
-    color: #fff;
-    font-size: 2.8em;
-    font-weight: 800;
-    letter-spacing: 4px;
-    text-decoration: none;
-    position: relative;
+header nav ul li {
+  font-family: 'MarzoW00-Regular', sans-serif;
+  color: #fff;
+  font-size: 2.4em;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-decoration: none;
+  position: relative;
+  margin: 2vh 5vw;
 }
 
-header nav ul li::after{
+header nav ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -52,50 +55,50 @@ header nav ul li::after{
   height: 2px;
   background: currentColor;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transform-origin: right;
-          transform-origin: right;
+  transform-origin: right;
   transition: -webkit-transform 250ms ease-in;
   transition: transform 250ms ease-in;
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
-header nav ul li:hover::after{
+header nav ul li:hover::after {
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
   -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
 }
 
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-header #Banner{
+header #Banner {
   margin-top: 30vh;
   height: 50%;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 3vw;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3vw;
 }
 
-header #Banner h1{
+header #Banner h1 {
   color: #fff;
-    font-family: 'Great Vibes', cursive;
-    font-size: 10em;
-    text-align: left;
-    padding-top: 2vh;;
-    font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+  font-size: 10em;
+  text-align: left;
+  padding-top: 2vh;
+  font-weight: 500;
 }
 
-header #Banner .contactBanner{
+header #Banner .contactBanner {
   font-family: 'MarzoW00-Regular', sans-serif;
   font-size: 6em;
 }
 
-header #Banner p{
+header #Banner p {
   color: #fff;
   font-family: 'MarzoW00-Regular', sans-serif;
   font-size: 3.5em;
@@ -103,115 +106,180 @@ header #Banner p{
   font-weight: 500;
 }
 
-main{
+main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-section{
+section {
   width: 80%;
 }
 
-#contactSection{
+#assortimentSection{
+  padding: 5vw 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'MarzoW00-Regular', sans-serif;
+  margin: none;
+}
+
+#assortimentSection table{
+  width: 80%;
+  text-align: center;
+}
+
+#assortimentSection table th{
+  font-size: 3em;
+  font-weight: 800;
+  width: 50%;
+  padding: 1vh 2vw;
+}
+
+#assortimentSection table td{
+  padding: 1vh 0;
+}
+
+#contactSection {
   padding: 5vw 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#infoDiv{
+#infoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 45%;
   list-style: none;
   color: #000;
   font-family: 'MarzoW00-Regular', sans-serif;
   font-size: 2.2rem;
+  padding-left:2vw;
 }
 
-#infoDiv .titleBold{
+#infoDiv .titleBold {
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
 }
 
 .content {
-    width: 70vw;
-    padding: 3em;
-    text-align: center;
-    margin-bottom: 1em;
-  }
+  width: 70vw;
+  padding: 3em;
+  text-align: center;
+  margin-bottom: 1em;
+}
 
 .card {
-    padding: 2em;
-    background-blend-mode: multiply;
-    color: white;
-    text-align: left;
-  }
-  
-  .card__title {
-    color: #000;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
-  
-  .card__title::after {
-    content: "";
-    position: absolute;
-    top: -0.25rem;
-    left: -2rem;
-    bottom: -0.25rem;
-    width: calc(100% + 4rem);
-    background: #888;
-    z-index: -1;
-    -webkit-transform: scaleX(0.075);
-            transform: scaleX(0.075);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    transition: -webkit-transform 250ms ease-in;
-    transition: transform 250ms ease-in;
-    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  }
-  
-  .card:hover .card__title::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  
-  .card__body {
-    position: relative;
-    z-index: 1;
-    color: transparent;
-    margin: 0;
-    transition: color 150ms 350ms;
-  }
-  
-  .card__body::after {
-    content: "";
-    position: absolute;
-    top: -0.75rem;
-    bottom: -0.75rem;
-    left: -0.75em;
-    right: -0.75em;
-    background: #000;
-    z-index: -1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    transition: -webkit-transform 250ms ease-in 250ms;
-    transition: transform 250ms ease-in 250ms;
-    transition: transform 250ms ease-in 250ms, -webkit-transform 250ms ease-in 250ms;
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-  
-  .card:hover .card__body {
-    color: #333;
-  }
-  
-  .card:hover .card__body::after {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
+  padding: 2em;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: left;
+}
+
+.card__title {
+  color: #000;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: -2rem;
+  bottom: -0.25rem;
+  width: calc(100% + 4rem);
+  background: #888;
+  z-index: -1;
+  -webkit-transform: scaleX(0.075);
+  transform: scaleX(0.075);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.card:hover .card__title::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.card__body {
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  margin: 0;
+  transition: color 150ms 350ms;
+}
+
+.card__body::after {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  bottom: -0.75rem;
+  left: -0.75em;
+  right: -0.75em;
+  background: #000;
+  z-index: -1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  transition: -webkit-transform 250ms ease-in 250ms;
+  transition: transform 250ms ease-in 250ms;
+  transition: transform 250ms ease-in 250ms, -webkit-transform 250ms ease-in 250ms;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+}
+
+.card:hover .card__body {
+  color: #333;
+}
+
+.card:hover .card__body::after {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+footer {
+  display: flex;
+  height: 20vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../Images/FeatherBanner.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li{
+  text-align: center;
+  width: 20%;
+  font-family: 'MarzoW00-Regular', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  padding: 0.5vh 2vw;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 2vh 1vw;
+}
+
+footer ul li a:hover {
+  box-shadow: inset 0 -1.8em 0 rgba(196, 185, 185, 0.6);
+  transition:  250ms ease-in-out;
+}
+
