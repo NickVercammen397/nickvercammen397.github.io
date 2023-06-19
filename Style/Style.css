@@ -4,8 +4,7 @@
 }
 
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../Images/FeatherBanner.jpg");
-  background-position: top;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../Images/FeatherBanner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -13,16 +12,24 @@ header {
 }
 
 #contactHeader {
-  height: 90vh;
+  height: auto;
 }
 
 header nav {
   height: 13vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #82728C;
   border-bottom: #fff 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header nav img{
+  position: absolute;
+  left:0;
+  margin-left: 2vw;
+  height: 12%;
+  border-radius: 10px;
 }
 
 header nav ul {
@@ -36,9 +43,9 @@ header nav ul {
 }
 
 header nav ul li {
-  font-family: 'MarzoW00-Regular', sans-serif;
+  font-family: 'Poiret One', sans-serif;
   color: #fff;
-  font-size: 2.4em;
+  font-size: 2.6em;
   font-weight: 800;
   letter-spacing: 4px;
   text-decoration: none;
@@ -76,7 +83,7 @@ header nav ul li a {
 }
 
 header #Banner {
-  margin-top: 30vh;
+  margin-top: 20vh;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -85,35 +92,88 @@ header #Banner {
 }
 
 header #Banner h1 {
-  color: #fff;
+  color: #82728C;
+  text-shadow: 1px 1px 2px #fff;
   font-family: 'Great Vibes', cursive;
-  font-size: 10em;
+  font-size: 11em;
   text-align: left;
   padding-top: 2vh;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 header #Banner .contactBanner {
-  font-family: 'MarzoW00-Regular', sans-serif;
+  font-family: 'Poiret One', sans-serif;
   font-size: 6em;
 }
 
 header #Banner p {
   color: #fff;
-  font-family: 'MarzoW00-Regular', sans-serif;
-  font-size: 3.5em;
+  text-shadow: 1px 1px 2px #000;
+  font-family: 'Poiret One', sans-serif;
+  font-size: 4em;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 main {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../Images/FeatherBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+#contactMain{
+  flex-direction: column;
+}
+
+#contactMain h1{
+  color: #82728C;
+  align-self: flex-start;
+  font-family: 'Poiret One', sans-serif;
+  font-size: 5em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 1vh 6vw;
+}
+
 section {
   width: 80%;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2vh 3vw;
+}
+
+#homeSection h1{
+  color: #82728C;
+  font-family: 'Great Vibes', serif;
+  font-size: 6em;
+  padding-bottom: 3vh;
+}
+#homeSection h2{
+  color: #82728C;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  padding-bottom: 3vh;
+}
+
+#homeSection p{
+  font-size: .9em;
+  line-height: 4vh;
+  padding-bottom: 2vh;
+  font-family: 'Poiret One', cursive;
+}
+
+#homeSection p:first-child{
+  font-size: .7em;;
+  font-family: 'Lato', serif;
+}
+
+#homeSection p:nth-child(2){
+  font-family: 'Lato', serif;
+  font-size: .8em;
 }
 
 #assortimentSection{
@@ -121,7 +181,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'MarzoW00-Regular', sans-serif;
+  font-family: 'Poiret One', sans-serif;
   margin: none;
 }
 
@@ -131,15 +191,21 @@ section {
 }
 
 #assortimentSection table th{
+  color: #82728C;
   font-size: 3em;
   font-weight: 800;
   width: 50%;
-  padding: 1vh 2vw;
+  padding: 1vh 0;
 }
 
 #assortimentSection table td{
+  font-family: 'Lato', serif;
   padding: 1vh 0;
 }
+
+#assortimentSection table td:first-child, #assortimentSection table th:first-child{
+  border-right: 1px solid #000;
+} 
 
 #contactSection {
   padding: 5vw 10vh;
@@ -155,7 +221,7 @@ section {
   width: 45%;
   list-style: none;
   color: #000;
-  font-family: 'MarzoW00-Regular', sans-serif;
+  font-family: 'Poiret One', sans-serif;
   font-size: 2.2rem;
   padding-left:2vw;
 }
@@ -237,7 +303,7 @@ section {
 }
 
 .card:hover .card__body {
-  color: #333;
+  color: #fff;
 }
 
 .card:hover .card__body::after {
@@ -248,11 +314,23 @@ section {
 footer {
   display: flex;
   height: 20vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../Images/FeatherBanner.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  background-color: #fff;
+}
+
+footer img{
+  position: absolute;
+  right:0;
+  margin-top: 3vh;
+  margin-right: 2vw;
+  height: 14vh;
+  border-radius: 10px;
+  transform: scaleX(-1);
+}
+
+footer img:first-child{
+  left:0;
+  margin-left: 2vw;
+  transform: scaleX(1);
 }
 
 footer ul{
@@ -266,20 +344,21 @@ footer ul{
 footer ul li{
   text-align: center;
   width: 20%;
-  font-family: 'MarzoW00-Regular', sans-serif;
-  font-size: 2em;
-  font-weight: 800;
+  font-family: 'Poiret One', sans-serif;
   padding: 0.5vh 2vw;
 }
 
 footer ul li a {
-  color: white;
+  color: rgb(130, 114, 140);
+  font-size: 2.6em;
   text-decoration: none;
+  font-weight: 800;
   padding: 2vh 1vw;
 }
 
 footer ul li a:hover {
-  box-shadow: inset 0 -1.8em 0 rgba(196, 185, 185, 0.6);
+  box-shadow: inset 0 -2.3em 0 rgba(130, 114, 140);
   transition:  250ms ease-in-out;
+  color: #fff;
 }
 
